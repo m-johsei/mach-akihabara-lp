@@ -1,0 +1,51 @@
+name: Refresh Instagram feed
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch latest Instagram posts
+        id: fetch
+        env:
+          IG_MODE: ${{ vars.IG_MODE || 'instagram' }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_LIMIT: "9"
+        run: node scripts/fetch-instagram.js
+
+      - name: Save refreshed token
+        if: steps.fetch.outputs.new_token != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+          NEW_TOKEN: ${{ steps.fetch.outputs.new_token }}
+        run: |
+          printf '%s' "$NEW_TOKEN" | gh secret set IG_TOKEN || \
+            echo "::warning::Could not update IG_TOKEN secret (needs a PAT with secrets:write). Token still valid for ~60 days."
+
+      - name: Commit if changed
+        run: |
+          git config user.name "mach-instagram-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/instagram-feed.json
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: refresh Instagram feed [skip ci]"
+            git push
+          fi
