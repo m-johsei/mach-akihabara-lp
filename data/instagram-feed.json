@@ -1,0 +1,55 @@
+{
+  "_README": "Live Instagram feed consumed by the front-end. This file ships with placeholder posts so the section works out of the box. In production, overwrite it during your build (GitHub Action / serverless function / pre-deploy script) using the Instagram Graph API. NEVER expose an access token in front-end JS. If this file is missing or fails to load, the page falls back to data/instagram-fallback.json.",
+  "generatedAt": "placeholder",
+  "profile": "https://www.instagram.com/mach_tcg_akihabara/",
+  "posts": [
+    {
+      "id": "feed-1",
+      "image": "assets/images/radio-kaikan/radio-kaikan-01-thumb.jpg",
+      "captionEn": "Your MACH route starts here — Radio Kaikan Store, right by Akihabara Station.",
+      "captionZh": "你的 MACH 路線從這裡開始 — 無線電會館店，就在秋葉原站旁。",
+      "date": "2026-06-21",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "feed-2",
+      "image": "assets/images/suehirocho/suehirocho-01-thumb.jpg",
+      "captionEn": "Look for the yellow MACH sign in Suehirocho. More cards, more figures.",
+      "captionZh": "在末廣町尋找黃色 MACH 招牌。更多卡牌，更多模型。",
+      "date": "2026-06-19",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "feed-3",
+      "image": "assets/images/hobby-kan/hobby-kan-08-thumb.jpg",
+      "captionEn": "Figures, hololive goods and more waiting at MACH Hobby Store.",
+      "captionZh": "模型、hololive 周邊與更多商品，在 MACH Hobby 館等你。",
+      "date": "2026-06-17",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "feed-4",
+      "image": "assets/images/radio-kaikan/radio-kaikan-03-thumb.jpg",
+      "captionEn": "Cards wall fully stocked. Come find your favorite!",
+      "captionZh": "整面卡牌牆補好補滿，快來找到你的最愛！",
+      "date": "2026-06-14",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "feed-5",
+      "image": "assets/images/suehirocho/suehirocho-04-thumb.jpg",
+      "captionEn": "Packed shelves, endless hunting. Don't miss Suehirocho Store.",
+      "captionZh": "貨架滿滿，挖寶不停。別錯過末廣町店。",
+      "date": "2026-06-11",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "feed-6",
+      "image": "assets/images/hobby-kan/hobby-kan-03-thumb.jpg",
+      "captionEn": "hololive fans, this is your stop. Complete your Akihabara hunt at MACH.",
+      "captionZh": "hololive 粉絲，這就是你的一站。在 MACH 完成你的秋葉原尋寶。",
+      "date": "2026-06-09",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    }
+  ]
+}

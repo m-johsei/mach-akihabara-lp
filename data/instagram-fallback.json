@@ -1,0 +1,54 @@
+{
+  "_README": "Fallback Instagram posts shown when the live feed is unavailable. Images point to local store photos as placeholders. Replace with real post data, or let your build script / serverless function overwrite data/instagram-feed.json. Do NOT put any Instagram access token in front-end JS.",
+  "profile": "https://www.instagram.com/mach_tcg_akihabara/",
+  "posts": [
+    {
+      "id": "fallback-1",
+      "image": "assets/images/radio-kaikan/radio-kaikan-03-thumb.jpg",
+      "captionEn": "New Pokémon card cases just restocked at Radio Kaikan Store! Come hunt before they're gone.",
+      "captionZh": "無線電會館店寶可夢卡牌櫃補貨啦！趁早來尋寶吧。",
+      "date": "2026-06-20",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "fallback-2",
+      "image": "assets/images/hobby-kan/hobby-kan-01-thumb.jpg",
+      "captionEn": "hololive premium cards now on display at MACH Hobby Store.",
+      "captionZh": "MACH Hobby 館 hololive 高級卡牌現正展示中。",
+      "date": "2026-06-18",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "fallback-3",
+      "image": "assets/images/suehirocho/suehirocho-03-thumb.jpg",
+      "captionEn": "Shelves packed with anime figures at Suehirocho Store. So much to explore!",
+      "captionZh": "末廣町店滿滿的動漫模型貨架，等你來逛！",
+      "date": "2026-06-15",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "fallback-4",
+      "image": "assets/images/radio-kaikan/radio-kaikan-05-thumb.jpg",
+      "captionEn": "ONE PIECE card fans — your treasure hunt starts at MACH.",
+      "captionZh": "航海王卡牌玩家，你的尋寶之旅就從 MACH 開始。",
+      "date": "2026-06-12",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "fallback-5",
+      "image": "assets/images/hobby-kan/hobby-kan-05-thumb.jpg",
+      "captionEn": "Character goods and collectibles galore. Complete your route at MACH Hobby Store.",
+      "captionZh": "角色週邊與收藏應有盡有，在 MACH Hobby 館完成你的路線。",
+      "date": "2026-06-10",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    },
+    {
+      "id": "fallback-6",
+      "image": "assets/images/suehirocho/suehirocho-05-thumb.jpg",
+      "captionEn": "Follow the yellow signs around Akihabara and find your favorite at MACH.",
+      "captionZh": "認明秋葉原的黃色招牌，在 MACH 找到你的最愛。",
+      "date": "2026-06-08",
+      "url": "https://www.instagram.com/mach_tcg_akihabara/"
+    }
+  ]
+}
